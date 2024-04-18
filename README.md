@@ -15,3 +15,30 @@ To get started with `sparklingcursor`, install the package using npm or Yarn:
 
 ```bash
 npm install sparklingcursor
+```
+or 
+```bash
+yarn add sparklingcursor
+```
+
+## Usage 
+To use the sparklingcursor hook in your React component, simply import and call it as shown in the following example:
+
+```jsx
+import React from 'react';
+import useSparklingCursor from 'sparklingcursor';
+
+function MyComponent() {
+    useSparklingCursor({
+        colorPalette: ['#FFD700', '#FFA500', '#FFD55A', '#EAC086', '#FFFAF0'],
+        size: '14px',
+        glowEnabled: true,
+        glowColor: '#fff4c3'
+    });
+
+    return <div>Welcome to the sparkly experience!</div>;
+}
+
+export default MyComponent;
+
+```
