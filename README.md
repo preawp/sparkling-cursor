@@ -1,64 +1,17 @@
-Sparkling Cursor
+# Sparkling Cursor
 
-sparklingcursor is a React hook that adds a sparkling effect to your cursor. This hook creates animated sparkles around the cursor as it moves across the screen, adding a visually appealing, interactive element to your web applications. It's highly customizable with options for colors, sizes, and additional glow effects.
+Enhance your web applications with `sparklingcursor`, a React hook that adds delightful, animated sparkles around the cursor as it moves across the screen. This easy-to-use hook is designed for React developers looking to add a touch of visual flair to their projects.
 
-Features
+## Features
 
-Customizable color palette for sparkles
-Adjustable size for sparkle elements
-Optional glow effect for each sparkle
-Easy to integrate with any React project
-Installation
+- **Customizable Color Palette**: Choose from a predefined set of colors or define your own to match your site's theme.
+- **Adjustable Size**: Set the size of the sparkles to ensure they don't overpower your content.
+- **Glow Effect**: Optionally add a subtle glow around each sparkle to make them stand out even more.
+- **Ease of Integration**: With minimal setup, you can incorporate `sparklingcursor` into any React application.
 
-Install sparklingcursor via npm:
+## Installation
 
-bash
-Copy code
+To get started with `sparklingcursor`, install the package using npm or Yarn:
+
+```bash
 npm install sparklingcursor
-Or via yarn:
-
-bash
-Copy code
-yarn add sparklingcursor
-Usage
-
-Here is a simple example of how to use the sparklingcursor hook in your React component:
-
-jsx
-Copy code
-import React from 'react';
-import useSparklingCursor from 'sparklingcursor';
-
-function MyComponent() {
-  useSparklingCursor({
-    colorPalette: ['#FFD700', '#FFA500', '#FFD55A', '#EAC086', '#FFFAF0'],
-    size: '14px',
-    glowEnabled: true,
-    glowColor: '#fff4c3'
-  });
-
-  return <div>Hello, sparkle with your cursor here!</div>;
-}
-
-export default MyComponent;
-Options
-
-You can customize the sparkles with the following options:
-
-colorPalette (Array<string>): An array of color hex codes used for the sparkle colors. Default: ['#FFD700', '#FFA500', '#FFD55A', '#EAC086', '#FFFAF0'].
-size (string): The font size of the sparkles. Default: '14px'.
-glowEnabled (boolean): Enables a glow effect around the sparkles. Default: false.
-glowColor (string): Color of the glow effect. Default: '#fff4c3'.
-Contributing
-
-Contributions are always welcome! Please read the contribution guidelines first.
-
-License
-
-Distributed under the MIT License. See LICENSE for more information.
-
-Support
-
-If you have any issues or feature requests, please file an issue on the GitHub repository page.
-
-
