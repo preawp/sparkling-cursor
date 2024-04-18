@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+Sparkling Cursor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+sparklingcursor is a React hook that adds a sparkling effect to your cursor. This hook creates animated sparkles around the cursor as it moves across the screen, adding a visually appealing, interactive element to your web applications. It's highly customizable with options for colors, sizes, and additional glow effects.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Customizable color palette for sparkles
+Adjustable size for sparkle elements
+Optional glow effect for each sparkle
+Easy to integrate with any React project
+Installation
 
-### `npm start`
+Install sparklingcursor via npm:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm install sparklingcursor
+Or via yarn:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+yarn add sparklingcursor
+Usage
 
-### `npm test`
+Here is a simple example of how to use the sparklingcursor hook in your React component:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+jsx
+Copy code
+import React from 'react';
+import useSparklingCursor from 'sparklingcursor';
 
-### `npm run build`
+function MyComponent() {
+  useSparklingCursor({
+    colorPalette: ['#FFD700', '#FFA500', '#FFD55A', '#EAC086', '#FFFAF0'],
+    size: '14px',
+    glowEnabled: true,
+    glowColor: '#fff4c3'
+  });
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  return <div>Hello, sparkle with your cursor here!</div>;
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+export default MyComponent;
+Options
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can customize the sparkles with the following options:
 
-### `npm run eject`
+colorPalette (Array<string>): An array of color hex codes used for the sparkle colors. Default: ['#FFD700', '#FFA500', '#FFD55A', '#EAC086', '#FFFAF0'].
+size (string): The font size of the sparkles. Default: '14px'.
+glowEnabled (boolean): Enables a glow effect around the sparkles. Default: false.
+glowColor (string): Color of the glow effect. Default: '#fff4c3'.
+Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributions are always welcome! Please read the contribution guidelines first.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Distributed under the MIT License. See LICENSE for more information.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Support
 
-## Learn More
+If you have any issues or feature requests, please file an issue on the GitHub repository page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
