@@ -16,6 +16,7 @@ const StyledContainer = styled.div`
 `;
 
 const MagicButton = styled.button`
+    margin-top: 15px;
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 5px;

@@ -1,14 +1,13 @@
-
 import { useEffect } from 'react';
-export default function useSparklingCursor({
-                                colorPalette = ['#FFD700', '#FFA500', '#FFD55A', '#EAC086', '#FFFAF0'],
+
+const useSparklingCursor = ({ colorPalette = ['#FFD700', '#FFA500', '#FFD55A', '#EAC086', '#FFFAF0'],
                                 size = '14px',
                                 glowEnabled = false,
                                 glowColor = '#fff4c3'
-                           } = {}) {
+                            } = {}) => {
     const count = 4;
     const duration = 2000;
-    const symbol= '+';
+    const symbol = '+';
 
     useEffect(() => {
         const handleMouseMove = event => {
@@ -46,4 +45,8 @@ export default function useSparklingCursor({
             window.removeEventListener('mousemove', handleMouseMove);
         };
     }, [colorPalette, symbol, size, glowEnabled, glowColor]);
-}
+
+    return null;
+};
+
+export default useSparklingCursor;

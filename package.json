@@ -1,7 +1,7 @@
 {
-  "name": "sparklingcursor",
-  "version": "0.1.0",
-  "private": true,
+  "name": "sparkling-cursor",
+  "version": "1.0.0",
+  "main": "useSparklingCursor.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

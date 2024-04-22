@@ -1,5 +1,5 @@
-//
-import React from 'react';
+
+import React from "react";
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import useSparklingCursor from '../useSparklingCursor/useSparklingCursor';
@@ -12,11 +12,12 @@ const StyledContainer = styled.div`
     flex-direction: column;
     font-size: 24px;
     font-family: "Quicksand", sans-serif;
-    background-color: #262626;
+    background-color: #1d1d1d;
     color: white;
 `;
 
 const MagicButton = styled.button`
+    margin-top: 15px;
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 5px;
