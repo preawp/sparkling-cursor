@@ -1,4 +1,4 @@
-# Sparkling Cursor
+# Welcome to Sparkling Cursor!
 ![sparks](https://github.com/preawp/sparkling-cursor/assets/113046852/a773e3d6-6704-4e20-a425-7ccee60229df)
 
 
