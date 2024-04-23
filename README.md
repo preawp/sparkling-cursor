@@ -1,4 +1,7 @@
 # Sparkling Cursor
+![sparks](https://github.com/preawp/sparkling-cursor/assets/113046852/a773e3d6-6704-4e20-a425-7ccee60229df)
+
+
 
 Enhance your web applications with `sparklingcursor`, a React hook that adds delightful, animated sparkles around the cursor as it moves across the screen. This easy-to-use hook is designed for React developers looking to add a touch of visual flair to their projects.
 
